@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  dev-env:
+    build: .
+    container_name: arduino-nim-build
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+
